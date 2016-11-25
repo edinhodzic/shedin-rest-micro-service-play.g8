@@ -1,0 +1,7 @@
+GET     /ping            io.shedin.crud.play.PingController.ping
+
+POST    /$domain;format="lower"$            $package$.crud.controller.$domain$CrudController.post
+GET     /$domain;format="lower"$/:id        $package$.crud.controller.$domain$CrudController.get(id: String)
+PUT     /$domain;format="lower"$/:id        $package$.crud.controller.$domain$CrudController.put(id: String)
+PATCH   /$domain;format="lower"$/:id        $package$.crud.controller.$domain$CrudController.patch(id: String)
+DELETE  /$domain;format="lower"$/:id        $package$.crud.controller.$domain$CrudController.delete(id: String)
