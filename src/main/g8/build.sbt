@@ -6,6 +6,8 @@ version := "0.1.0-SNAPSHOT"
 
 scalaVersion := "2.11.8"
 
+normalizedName := "$org$-service-crud-$domain;format="lower"$"
+
 lazy val $domain;format="lower"$CrudService = (project in file(".")).enablePlugins(PlayScala)
 
 libraryDependencies ++= Seq(
