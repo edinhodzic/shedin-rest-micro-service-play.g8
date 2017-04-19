@@ -86,3 +86,7 @@ Below are the REST conventions and CRUD and query operations which you can now p
 - [ ] get back go `sbt "project userService" run` for running the service
 - [ ] resolve any `TODO`s above
 - [x] add a README.md to the generated project
+
+# License
+
+This code is open source software licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html).
