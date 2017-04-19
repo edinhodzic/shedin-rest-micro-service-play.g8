@@ -28,6 +28,8 @@ ivyScala := ivyScala.value map {
 packageOptions in(Compile, packageBin) += {
   import java.util.jar.{Attributes, Manifest}
   val manifest = new Manifest
-  manifest.getMainAttributes.put(Attributes.Name.IMPLEMENTATION_VERSION, version)
+  manifest.getMainAttributes.put(Attributes.Name.SPECIFICATION_VENDOR, "$org$")
+  manifest.getMainAttributes.put(Attributes.Name.IMPLEMENTATION_VENDOR, "$org$")
+  manifest.getMainAttributes.put(Attributes.Name.IMPLEMENTATION_VENDOR_ID, "$org$")
   Package.JarManifest(manifest)
 }
