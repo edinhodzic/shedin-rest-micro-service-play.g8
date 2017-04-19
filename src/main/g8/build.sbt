@@ -24,3 +24,10 @@ libraryDependencies ++= Seq(
 ivyScala := ivyScala.value map {
   _.copy(overrideScalaVersion = true)
 }
+
+packageOptions in(Compile, packageBin) += {
+  import java.util.jar.{Attributes, Manifest}
+  val manifest = new Manifest
+  manifest.getMainAttributes.put(Attributes.Name.IMPLEMENTATION_VERSION, version)
+  Package.JarManifest(manifest)
+}
