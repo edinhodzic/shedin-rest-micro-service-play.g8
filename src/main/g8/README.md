@@ -4,7 +4,9 @@ REST $domain;format="lower"$ micro service capable of CRUD and query operations.
 
 # What's under the hood?
 
-- [Spray](http://spray.io/) 
+- [Play](https://www.playframework.com/) 
+- [ReactiveMongo](http://reactivemongo.org/) 
+- [MongoDB](https://www.mongodb.com/) 
 
 # Quick start usage
 
@@ -33,3 +35,6 @@ Invoke CRUD and query operations on the service at `http://localhost:9000/$domai
 
     TODO setup and document
 
+# License
+
+This code is open source software licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html).
